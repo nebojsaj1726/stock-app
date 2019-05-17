@@ -48,6 +48,11 @@ body {
   display: grid;
   grid-template-columns: min-content 1fr;
 }
+ @media only screen and (min-width: 42.5em) {
+   .logo {
+     margin-left: 3rem;
+   }
+ }
 
 .logo svg {
   height: 2rem;
@@ -70,6 +75,7 @@ body {
   @media only screen and (min-width: 42.5em) {
     .search {
       width: 45rem;
+      margin-left: 3rem;
     }
 }
   .search:focus-within {
