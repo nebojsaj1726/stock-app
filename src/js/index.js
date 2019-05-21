@@ -31,7 +31,12 @@ const controlSearch = async () => {
 
             // render results on UI
             clearLoader();
-            searchView.renderResults(state.search.result);
+            if (state.search.result.length !== 0) {
+                searchView.renderResults(state.search.result);
+            } else {
+                searchView.renderMessage();
+            }
+            
         } catch (error) {
             alert(error);
             clearLoader();

@@ -29,3 +29,10 @@ const renderMatch = match => {
 export const renderResults = matches => {
     matches.forEach(renderMatch);
 };
+
+export const renderMessage = () => {
+    const message = `
+        <p class="results__message">No results for your search</p>
+    `;
+    elements.stock.insertAdjacentHTML('beforeend', message);
+}
